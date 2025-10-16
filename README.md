@@ -16,21 +16,25 @@ O projeto é voltado para alunos da disciplina de Análise de Sistemas Orientada
 
 ## 📂 Estrutura do Projeto
 
+```
 📦 cobrinha/
 ┣ 📄 configuracoes.py   → constantes do jogo (tamanho, cores, FPS, etc.)
 ┣ 📄 entidades.py       → classes do domínio (Direcao, Cobra, Comida)
 ┣ 📄 jogo.py            → regras do jogo (classe Jogo)
 ┣ 📄 main.py            → loop principal
 ┗ 📄 README.md          → este arquivo
+```
 
 ## 🔗 Diagrama de Dependências
 
+```text
 main.py
 ├─ importa → jogo.py
 │  ├─ importa → entidades.py
 │  │  └─ importa → configuracoes.py
 │  └─ importa → configuracoes.py
 └─ importa → configuracoes.py
+```
 
 
 Em Resumo:
@@ -99,6 +103,7 @@ Em `entidades.py`, resolva todos os TODO:
 * [ ] Adicionar **efeitos sonoros** ao comer ou perder.
 * [ ] Implementar **níveis de dificuldade** (fácil, médio, difícil).
 * [ ] Guardar o recorde em **arquivo** para persistir entre execuções.
+
 
 
 
